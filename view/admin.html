@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>学涯中考网</title>
+	<link rel="stylesheet" type="text/css" href="../css/xueya0.2.css">
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body id="body">
+
+<div class="home_banner">	
+	<div class="home_banner_logo bg"></div>
+	<div class="home_banner_title clearfix">
+		<span>学涯</span>
+		<span class="blue">中考</span>
+		<span>网</span>
+	</div>
+	<div class="home_banner_url">www.zk51.com.cn</div>
+	<div class="home_banner_user bg" id="login" style="top:40px">会员登录</div>
+	<div class="home_banner_intro bg" style="top:40px">新手上路</div>
+</div>
+
+<div class="admin_banner clearfix">
+	<div class="admin_banner_btn selected" data-key="user">用户资料</div>
+	<div class="admin_banner_sep"></div>
+	<div class="admin_banner_btn" data-key="resource">资料管理</div>
+	<div class="admin_banner_sep"></div>
+	<div class="admin_banner_btn" data-key="download">下载日志</div>
+	<div class="admin_banner_sep"></div>
+	<div class="admin_banner_btn" data-key="upload">上传日志</div>
+</div>
+
+<div class="admin_main" id="admin_main" style="height:310px;">
+	<iframe id="admin_iframe" name="admin_iframe" src="./ifr_user.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="admin_belt"></div>
+
+<div class="admin_btm clearfix" style="margin-bottom:20px;">
+	<span class="admin_btm_l">© 2013 xueya.com, all rights reserved</span>
+	<a class="admin_btm_r" href="http://www.baidu.com" target="_blank">联系我们</a>	
+	<a class="admin_btm_r" href="http://www.baidu.com" target="_blank">关于学涯中考网</a>
+</div>
+
+
+<!-- 登录弹窗 -->
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript">new Login();</script>
+<!-- 切换栏目 -->
+<script type="text/javascript" src="../js/ifr.js"></script>
+<script type="text/javascript">new Ifr();</script>
+
+</body>
+</html>

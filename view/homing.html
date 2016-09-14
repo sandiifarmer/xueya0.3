@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>学涯中考网</title>
+	<link rel="stylesheet" type="text/css" href="../css/xueya0.2.css">
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body id="body">
+
+<div class="home_top">
+	<div class="home_top_scope clearfix">
+		<div class="home_top_left">
+			<a class="home_top_opt" href="#">在线客服</a>
+			<a class="home_top_opt" href="#">上传资料</a>
+			<a class="home_top_opt" href="#">会员充值</a>
+			<a class="home_top_opt" href="#">联系我们</a>
+		</div>
+		<div class="home_top_right">
+			<span class="home_top_text">今日更新：</span>
+			<span class="home_top_num">0</span>
+			<span class="home_top_text">本周：</span>
+			<span class="home_top_num">0</span>
+			<span class="home_top_text">总量：</span>
+			<span class="home_top_num">169625</span>
+		</div>
+	</div>
+</div>
+
+<div class="home_banner">	
+	<div class="home_banner_logo bg"></div>
+	<div class="home_banner_title clearfix">
+		<span>学涯</span>
+		<span class="blue">中考</span>
+		<span>网</span>
+	</div>
+	<div class="home_banner_url">www.zk51.com.cn</div>
+	<div class="home_banner_user bg" id="login">会员登录</div>
+	<div class="home_banner_intro bg">新手上路</div>
+	<div class="home_banner_input bg">
+		<input type="text" id="home_search_input">
+	</div>
+	<div class="home_banner_search bg" id="home_search_btn">search</div>	
+</div>
+
+<div class="home_nav clearfix">
+	<div class="home_nav_left clearfix">
+		<a class="home_nav_li green" href="#">首页</a>
+		<a class="home_nav_li" href="#">试题</a>
+		<a class="home_nav_li" href="#">备课</a>
+		<a class="home_nav_li" href="#">课件</a>
+		<a class="home_nav_li" href="#">素材</a>
+		<a class="home_nav_li" href="#">习题</a>
+		<a class="home_nav_li green" href="#">中考</a>
+		<a class="home_nav_li" href="#">学案</a>
+		<a class="home_nav_li" href="#">教案</a>
+		<a class="home_nav_li" href="#">教案</a>
+		<a class="home_nav_li" href="#">作文</a>
+		<a class="home_nav_li" href="#">汇总</a>
+		<a class="home_nav_li green" href="#">专题</a>
+		<a class="home_nav_li" href="#">方法</a>
+		<a class="home_nav_li" href="#">动态</a>
+		<a class="home_nav_li" href="#">家长</a>
+		<a class="home_nav_li" href="#">名师</a>
+	</div>
+	<div class="home_nav_mid clearfix">
+		<a class="home_nav_li green" href="#">学科</a>
+		<a class="home_nav_li" href="#">语文</a>
+		<a class="home_nav_li" href="#">数学</a>
+		<a class="home_nav_li" href="#">英语</a>
+		<a class="home_nav_li" href="#">物理</a>
+		<a class="home_nav_li" href="#">化学</a>
+		<a class="home_nav_li" href="#">生物</a>
+		<a class="home_nav_li" href="#">政治</a>
+		<a class="home_nav_li" href="#">历史</a>
+		<a class="home_nav_li" href="#">地理</a>
+		<a class="home_nav_li" href="#">科学</a>
+	</div>
+	<div class="home_nav_right clearfix">
+		<a class="home_nav_li green" href="#">地区</a>
+		<a class="home_nav_li" href="#">北京</a>
+		<a class="home_nav_li" href="#">天津</a>
+		<a class="home_nav_li" href="#">上海</a>
+		<a class="home_nav_li" href="#">重庆</a>
+		<a class="home_nav_li" href="#">河北</a>
+		<a class="home_nav_li" href="#">河南</a>
+		<a class="home_nav_li" href="#">江苏</a>
+		<a class="home_nav_li" href="#">浙江</a>
+		<a class="home_nav_li" href="#">山东</a>
+		<a class="home_nav_li" href="#">江西</a>
+		<a class="home_nav_li" href="#">安徽</a>
+		<a class="home_nav_li" href="#">福建</a>
+		<a class="home_nav_li" href="#">广西</a>
+		<a class="home_nav_li" href="#">广东</a>
+		<a class="home_nav_li" href="#">云南</a>
+		<a class="home_nav_li" href="#">贵州</a>
+		<a class="home_nav_li" href="#">四川</a>
+		<a class="home_nav_li" href="#">湖南</a>
+		<a class="home_nav_li" href="#">湖北</a>
+		<a class="home_nav_li" href="#">陕西</a>
+		<a class="home_nav_li" href="#">山西</a>
+		<a class="home_nav_li" href="#">新疆</a>
+		<a class="home_nav_li" href="#">青海</a>
+		<a class="home_nav_li" href="#">甘肃</a>
+		<a class="home_nav_li" href="#">宁夏</a>
+		<a class="home_nav_li" href="#">西藏</a>
+		<a class="home_nav_li" href="#">吉林</a>
+		<a class="home_nav_li" href="#">辽宁</a>
+		<a class="home_nav_li" href="#">海南</a>
+		<a class="home_nav_li" href="#">内蒙古</a>
+		<a class="home_nav_li" href="#">黑龙江</a>
+	</div>
+</div>
+
+<div class="home_slide clearfix">
+	<div class="home_slide_left">
+		<div class="home_slide_ltop"></div>		
+		<div class="home_slide_body">
+			<div class="home_slide_content">
+				<a class="home_slide_tab selected" href="#">
+					<img src="../testimg/7.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/2.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/3.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/4.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/5.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/6.jpg">
+				</a>
+				<a class="home_slide_tab" href="#">
+					<img src="../testimg/1.jpg">
+				</a>
+			</div>
+			<div class="home_slide_nav clearfix">
+				<div class="home_slide_li selected"></div>
+				<div class="home_slide_li"></div>
+				<div class="home_slide_li"></div>
+				<div class="home_slide_li"></div>
+				<div class="home_slide_li"></div>
+				<div class="home_slide_li"></div>
+				<div class="home_slide_li"></div>
+			</div>
+		</div>
+		<div class="home_slide_lbtm"></div>
+	</div>
+	<div class="home_slide_right">
+		<a class="home_slide_btn" href="#">热点新闻</a>
+		<a class="home_slide_btn" href="#">热门资料</a>
+		<a class="home_slide_btn" href="#">中考热点</a>
+		<a class="home_slide_btn" href="#">中考专题</a>
+		<a class="home_slide_btn" href="#">最新资源</a>
+		<a class="home_slide_btn" href="#">下载排行</a>
+		<a class="home_slide_btn" href="#">名师解读</a>
+		<a class="home_slide_btn" href="#">学习方法</a>		
+	</div>
+</div>
+
+<div class="home_course">	
+	<div class="home_course_nav clearfix">
+		<div class="home_course_li first selected">语文</div>
+		<div class="home_course_li">数学</div>
+		<div class="home_course_li">英语</div>
+		<div class="home_course_li">物理</div>
+		<div class="home_course_li">化学</div>
+		<div class="home_course_li">生物</div>
+		<div class="home_course_li">政治</div>
+		<div class="home_course_li">历史</div>
+		<div class="home_course_li">地理</div>
+		<div class="home_course_li">科学</div>
+	</div>
+	<div class="home_course_body clearfix">
+		<div class="home_course_title">
+			<div class="home_course_text">备课中心</div>
+		</div>
+		<div class="home_course_content">
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">人教版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">华东师大版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">苏教版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">北师大版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">湘教版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+
+			<div class="home_course_row clearfix">
+				<div class="home_course_edtion">鲁教版</div>
+				<div class="home_course_entry long">七年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">七年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">八年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级上</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+
+				<div class="home_course_entry long">九年级下</div>
+				<a class="home_course_entry" href="#">试题</a>
+				<a class="home_course_entry" href="#">课件</a>
+				<a class="home_course_entry" href="#">教案</a>
+				<a class="home_course_entry" href="#">学案</a>
+				<a class="home_course_entry" href="#">素材</a>
+			</div>
+		</div>
+		<div class="home_course_special">
+			<div class="home_course_type">数学专题</div>
+			<div class="home_course_topic">有理数整式的加减</div>
+		</div>
+	</div>
+	<div class="home_course_btm"></div>
+</div>
+
+<div class="home_resourse">
+	<div class="home_resourse_nav clearfix">
+		<div class="home_resourse_li selected">试题中心</div>
+		<div class="home_resourse_li">精品资源</div>
+	</div>
+	<div class="home_resourse_body clearfix">
+		<div class="home_resourse_left">
+			<div class="home_resourse_category">
+				<div class="home_resourse_tag">学科分类</div>
+				<div class="home_resourse_tip">请选择</div>
+				<div class="home_resourse_select" data-key="course">语文试题</div>
+			</div>
+			<div class="home_resourse_category">
+				<div class="home_resourse_tag">年级分类</div>
+				<div class="home_resourse_tip">请选择</div>
+				<div class="home_resourse_select" data-key="grade">七年级上</div>
+			</div>
+			<div class="home_resourse_category">
+				<div class="home_resourse_tag">类型分类</div>
+				<div class="home_resourse_tip">请选择</div>
+				<div class="home_resourse_select" data-key="exam">期中考试</div>
+			</div>
+			<div class="home_resourse_category">
+				<div class="home_resourse_tag">地区分类</div>
+				<div class="home_resourse_tip">请选择</div>
+				<div class="home_resourse_select" data-key="region">上海</div>
+			</div>
+		</div>
+		<div class="home_resourse_right clearfix">
+			<div class="home_resourse_block">
+				<div class="home_resourse_name">名校月考</div>
+				<a class="home_resourse_more" href="#">more</a>
+				<div class="home_resourse_blank">
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+				</div>
+			</div>
+			<div class="home_resourse_block">
+				<div class="home_resourse_name">中考模拟</div>
+				<a class="home_resourse_more" href="#">more</a>
+				<div class="home_resourse_blank">
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+				</div>
+			</div>
+			<div class="home_resourse_block">
+				<div class="home_resourse_name">期中考试</div>
+				<a class="home_resourse_more" href="#">more</a>
+				<div class="home_resourse_blank">
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+				</div>
+			</div>
+			<div class="home_resourse_block">
+				<div class="home_resourse_name">期末考试</div>
+				<a class="home_resourse_more" href="#">more</a>
+				<div class="home_resourse_blank">
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+					<a class="home_resourse_entry" href="#">新品GF670W富士展示中画幅旁轴相机新品GF670W实物富士中</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="home_link clearfix">
+	<div class="home_link_title">友情链接</div>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon baidu"></div>
+		<div class="home_link_name">百度</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon qq"></div>
+		<div class="home_link_name">腾讯</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon sina"></div>
+		<div class="home_link_name">新浪</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon weibo"></div>
+		<div class="home_link_name">微薄</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon ease"></div>
+		<div class="home_link_name">网易</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon douban"></div>
+		<div class="home_link_name">豆瓣</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon taobao"></div>
+		<div class="home_link_name">淘宝</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon alipay"></div>
+		<div class="home_link_name">支付宝</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon tianya"></div>
+		<div class="home_link_name">天涯</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon google"></div>
+		<div class="home_link_name">谷歌</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon renren"></div>
+		<div class="home_link_name">人人</div>		
+	</a>
+	<a class="home_link_entry" href="#">
+		<div class="home_link_icon youku"></div>
+		<div class="home_link_name">优库</div>		
+	</a>
+</div>
+
+<div class="home_about">
+	<div class="home_about_scope">
+		<a class="home_about_li" href="#">关于网站</a>
+		<a class="home_about_li" href="#">联系我们</a>
+		<a class="home_about_li" href="#">免责声明</a>
+		<a class="home_about_li" href="#">投诉建议</a>		
+	</div>
+</div>
+
+<div class="home_btm">	
+	<div class="home_btm_row">Copyright © 2006-2014 xueya.com, All Rights Reserved</div>
+	<div class="home_btm_row">京ICP证110737号　京公网安备110106100076号	</div>
+	<div class="home_btm_row">京ICP备11029505号-1</div>	
+</div>
+
+<!-- 登录弹窗 -->
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript">new Login();</script>
+<!-- 轮播图 -->
+<script type="text/javascript" src="../js/slide.js"></script>
+<script type="text/javascript">new Slide(".home_slide_tab",".home_slide_li");</script>
+<!-- 下拉菜单 -->
+<script type="text/javascript" src="../js/menu.js"></script>
+<script type="text/javascript">new Menu();</script>
+
+</body>
+</html>
